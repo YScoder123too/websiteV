@@ -2,127 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A cute and minimal single-page website with an adorable cat, soft colors, and lovely vibes. Made by Yogita." />
-  <meta name="author" content="Yogita Singh" />
-  <meta name="keywords" content="cute website, cat, minimal design, single page, soft colors, pastel, made by Yogita" />
-  <title>Welcome to my cute page ❤️</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-    }
-
-    body {
-      background: url('image.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      text-align: center;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 1rem;
-      margin: 1rem;
-    }
-
-    .nav-left,
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .nav-left button,
-    .nav-right button {
-      background-color: #e3f6f5;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .nav-right button:last-child {
-      background-color: #f9c5c2;
-    }
-
-    .main-title {
-      margin-top: 2rem;
-      background-color: rgba(255, 255, 255, 0.6);
-      display: inline-block;
-      padding: 1rem;
-      border-radius: 1rem;
-    }
-
-    .main-title img {
-      width: 50px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-
-    .heart {
-      font-size: 2rem;
-      color: #f7d8ba;
-    }
-
-    .speech-bubble {
-      background-color: rgba(255, 255, 255, 0.7);
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      margin-top: 1rem;
-      border-radius: 1rem;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: rgba(255, 182, 193, 0.7);
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      border-radius: 1rem;
-      margin: 2rem auto;
-      width: fit-content;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlitchCase</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="nav-left">
-      <button>Call Us</button>
-    </div>
-    <div class="nav-right">
-      <button>Home</button>
-      <button>Comyss</button>
-      <button>Coqeits</button>
-      <button>Gocle</button>
-      <button>Pliting</button>
-      <button>Soc/Tax</button>
-    </div>
+    <div class="logo">GlitchCase</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#designs">Designs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="main-title">
-    <img src="https://em-content.zobj.net/thumbs/240/apple/354/rabbit-face_1f430.png" alt="bunny" />
-    <h1>Welcome to my cute page ❤️</h1>
-    <div class="heart">💛</div>
-    <div class="speech-bubble">You're pawsome!</div>
-  </div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>FIND YOUR STYLE</h1>
+      <p>Trendy Skins & Cases for Every Mood</p>
+      <a href="designs.html" class="explore-btn">Explore Designs</a>
+
+    </div>
+  </section>
+
+  <section id="about" class="info-section">
+    <h2>About GlitchCase</h2>
+    <p>
+      GlitchCase is your go-to brand for stylish, durable, and customizable phone skins and accessories. We blend fashion with protection to make your phone uniquely yours.
+    </p>
+  </section>
+
+  <section id="designs" class="product-grid">
+    <h2>Featured Designs</h2>
+    <div class="grid">
+      <div class="product-card">
+        <img src="images/i.jpg" alt="Design 1">
+        <h3>Glitch Wave</h3>
+        <p>₹299</p>
+      </div>
+      <div class="product-card">
+        <img src="images/j.jpg" alt="Design 2">
+        <h3>Retro Vibe</h3>
+        <p>₹349</p>
+      </div>
+      <div class="product-card">
+        <img src="images/k.jpg" alt="Design 3">
+        <h3>Neon Glow</h3>
+        <p>₹399</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>Email: support@glitchcase.com</p>
+    <p>Instagram: @glitchcase.in</p>
+    <p>Location: India</p>
+  </section>
 
   <footer>
-    <p>❤️2025 made by <strong style="color: #d14f69;">Yogita</strong></p>
+    <p>&copy; 2025 GlitchCase. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Minimal interactivity if needed later
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
